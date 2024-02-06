@@ -1,5 +1,8 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -19,4 +22,72 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+menu,
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+ol,
+ul,
+menu {
+    list-style: none;
+}
+
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    border: 0;
+}
+
+.product_image {
+    width: 100%;
+    object-fit: contain;
+    height: 300px;
+}
+
+.product_name {
+    font-size: 1.1em;
+}
+
+.product_category {
+    font-size: 0.8em;
+    width: fit-content;
+}
+
+.product_description {
+    font-size: 0.9em;
+}
+
+.product_price {
+    font-size: 1em;
+}
+
+.product_icon {
+    display: inline;
+    height: 1.5em;
+    width: 20px;
 }
